@@ -25,7 +25,7 @@ export class FibonacciService {
   /**
    * This observable will emit a single result for a given string operation
    * Example : FibonacciService.getResults("1 + 1 =") will output 2, FibonacciService.getResults("2 + 1 =") will output 3, etc
-   * BE CAREFULL : the result may be output between 1s and 5s
+   * BE CAREFULL : the result may be output between 1s and 5s r
    * @param operation A string which represents a mathematical addition ("1 + 1 =")
    */
   static getResults(operation: string): Observable<number> {
