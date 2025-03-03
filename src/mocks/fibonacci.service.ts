@@ -15,7 +15,7 @@ export class FibonacciService {
     console.log(`Start gettings operations one by one`);
     return <Observable<string>>from(operationsString)
       .pipe(
-        // tap(() => console.log(`Start gettings operations one by one`)),
+        // tap(() => console.log(`Start gettings operations one by one`)), r
         // switchMap(operations => from(operations)),
         concatMap(operation => of(operation).pipe(delay(500))),
         tap((operation) => console.log(`${this.trackingId(operation)} [getOperations] : send operation : ${operation} ?`)),
