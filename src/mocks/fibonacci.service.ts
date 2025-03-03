@@ -9,7 +9,7 @@ export class FibonacciService {
 
   /**
    * This observable will emit an operation as a string every seconds
-   * Example : "1 + 1 =", "2 + 1 =", "3 + 2 =", etc
+   * Example : "1 + 1 =", "2 + 1 =", "3 + 2 =", etce e
    */
   static getOperations(): Observable<string> {
     console.log(`Start gettings operations one by one`);
